@@ -1,0 +1,203 @@
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        .spinner-wrapper {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #fff;
+            /* change if the mask should have another color then white */
+            z-index: 99;
+            /* makes sure it stays on top */
+        }
+        
+        .spinner {
+            background-image: url("photo/load.gif") no-repeat;
+            background-position: center;
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            left: 50%;
+            /* centers the loading animation horizontally one the screen */
+            top: 50%;
+            /* centers the loading animation vertically one the screen */
+            margin: -100px 0 0 -100px;
+        }
+        
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 90%;
+            margin-left: 5%;
+            box-sizing: border-box;
+            margin-top: 10%;
+            outline: none;
+            border: none;
+            border-bottom: 1px solid grey;
+        }
+        
+        input[type="submit"] {
+            width: 90%;
+            margin-left: 5%;
+            box-sizing: border-box;
+            margin-top: 10%;
+            outline: none;
+            background-color: lightseagreen;
+            height: 30px;
+            border-radius: 10px;
+            font-weight: bold;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        ul {
+            list-style: none;
+        }
+        
+        ul li {
+            float: right;
+            padding: 1%;
+            text-align: center;
+            box-sizing: border-box;
+        }
+        
+        li a {
+            text-decoration: none;
+            color: rgb(11, 15, 19);
+            font-weight: bold;
+            margin-top: 4px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        .logo {
+            text-align: center;
+        }
+        
+        .navbar {
+            background-color: rgb(11, 15, 19);
+        }
+        
+        .container {
+            text-align: center;
+            margin-right: 10%;
+        }
+        
+        .container-body {
+            background-image: url("photo/linkageImage.jpg");
+            background-size: cover;
+            min-height: 470px;
+            margin-top: 30px;
+        }
+        
+        .container-body h1 {
+            margin-top: 15%;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 40px;
+            color: white;
+        }
+        
+        .container-body h2 {
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 40px;
+            color: white;
+        }
+        
+        .container-body h3 {
+            background-color: maroon;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+            border-radius: 10px;
+            margin-top: 7%;
+            width: 50%;
+            margin-left: 25%;
+            cursor: pointer;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+        
+        .container-body h3:hover {
+            transition-duration: 0.5s;
+            background-color: rgb(231, 9, 9);
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+            border-radius: 10px;
+            margin-top: 7%;
+            width: 50%;
+            margin-left: 25%;
+        }
+        
+        input[type="submit"]:hover {
+            background-color: rgb(15, 231, 220);
+            color: white;
+            transition-duration: 0.5s;
+        }
+        
+        input[type="text"],
+        input[type="email"] {
+            border: none;
+            border-bottom: 1px solid grey;
+            height: 30px;
+        }
+        
+        .address1 {
+            float: right;
+        }
+        
+        @media only screen and (min-width:400px) {
+            .logo {
+                text-align: left;
+                width: 50%;
+            }
+            ul {
+                margin-top: -6.5%;
+                line-height: -100px;
+                float: left;
+                box-sizing: border-box;
+                width: 100%;
+                padding: 0;
+            }
+            ul li a {
+                padding: 55px 4px 34px 4px;
+                color: white;
+            }
+            a:hover {
+                background-color: white;
+                color: rgb(11, 15, 19);
+            }
+            .container-body {
+                background-image: url("photo/linkageImage.jpg");
+                background-size: cover;
+                min-height: 500px;
+                margin-top: 2px;
+            }
+            .container-body h1 {
+                margin-top: 5%;
+                text-align: center;
+                font-family: Arial, Helvetica, sans-serif;
+                line-height: 40px;
+                color: white;
+            }
+            .form-group {
+                width: 50%;
+                float: left;
+            }
+            #contactAddress {
+                width: 40%;
+                float: right;
+                box-sizing: border-box;
+                margin-right: 5%;
+                margin-top: 20%;
+                border: 1px solid grey;
+            }
+            .about-container {
+                min-height: 200px;
+            }
+        }
